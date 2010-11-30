@@ -111,6 +111,13 @@ $messages['gsw'] = array(
 	'dynamicsidebar-desc' => 'Stellt dynamischi Sytelyyschte z Verfiegig fir Benutzersyte, Gruppe un Kategorie',
 );
 
+/** Hebrew (עברית)
+ * @author YaronSh
+ */
+$messages['he'] = array(
+	'dynamicsidebar-desc' => 'אספקת סרגלי צד דינמיים מבוססים על דפי המשתמשים, הקבוצות והקטגוריות',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
