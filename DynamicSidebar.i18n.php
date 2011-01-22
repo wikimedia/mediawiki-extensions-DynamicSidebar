@@ -19,7 +19,7 @@ $messages['qqq'] = array(
 	'dynamicsidebar-desc' => '{{desc}}',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -252,14 +252,14 @@ $messages['ru'] = array(
 	'dynamicsidebar-desc' => 'Обеспечивает динамические боковые панели на основе личных страниц участников, групп и категорий',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'dynamicsidebar-desc' => 'Омогућава динамичке сајдбарове чији се садржај базира на корисничким странама, групама и категоријама',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica)) */
+/** Serbian Latin ekavian (‪Srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'dynamicsidebar-desc' => 'Omogućava dinamičke sajdbarove čiji se sadržaj bazira na korisničkim stranama, grupama i kategorijama',
 );
