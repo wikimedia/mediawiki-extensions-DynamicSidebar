@@ -174,6 +174,13 @@ $messages['lb'] = array(
 	'dynamicsidebar-desc' => 'Generéiert dynamesch säitlech Menuen déi op de Benotzersäiten, Gruppen a Kategorie bséieren',
 );
 
+/** Malagasy (Malagasy)
+ * @author Jagwar
+ */
+$messages['mg'] = array(
+	'dynamicsidebar-desc' => "Manome anja dinamika antsisiny mifototra amin'ny pejim-pikambana, ny vondrony ary ny sokajy",
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  */
