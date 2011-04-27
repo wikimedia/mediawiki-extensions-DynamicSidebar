@@ -259,6 +259,13 @@ $messages['ru'] = array(
 	'dynamicsidebar-desc' => 'Обеспечивает динамические боковые панели на основе личных страниц участников, групп и категорий',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'dynamicsidebar-desc' => 'Omogoča dinamično stransko vrstico glede na uporabniške strani, skupine in kategorije',
+);
+
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Михајло Анђелковић
  */
