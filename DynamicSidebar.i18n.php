@@ -19,6 +19,13 @@ $messages['qqq'] = array(
 	'dynamicsidebar-desc' => '{{desc}}',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'dynamicsidebar-desc' => "Ufre barres llaterales dinámiques basaes nes páxines d'usuariu, grupos y categoríes",
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
