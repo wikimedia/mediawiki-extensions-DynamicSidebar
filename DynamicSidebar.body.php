@@ -51,12 +51,12 @@ class DynamicSidebar {
 				foreach ( $groupSB as $groupSBkey => $groupSBvalue ) {
 					$sidebar_copy[$groupSBkey] = $groupSBvalue;
 				}
-			} else if ( $sidebar_key == 'USER-SIDEBAR' ) {
+			} elseif ( $sidebar_key == 'USER-SIDEBAR' ) {
 				// Replace the USER-SIDEBAR entry with the user's sidebar
 				foreach ( $userSB as $userSBkey => $userSBvalue ) {
 					$sidebar_copy[$userSBkey] = $userSBvalue;
 				}
-			} else if ( $sidebar_key == 'CATEGORY-SIDEBAR' ) {
+			} elseif ( $sidebar_key == 'CATEGORY-SIDEBAR' ) {
 				// Replace the CATEGORY-SIDEBAR entry with the category's sidebar
 				foreach ( $catSB as $catSBkey => $catSBvalue ) {
 					$sidebar_copy[$catSBkey] = $catSBvalue;
@@ -81,7 +81,7 @@ class DynamicSidebar {
 	private static function doUserSidebar() {
 		global $wgUser;
 		$username = $wgUser->getName();
-		
+
 		// does 'User:<username>/Sidebar' page exist?
 		$title = Title::makeTitle( NS_USER, $username . '/Sidebar' );
 		if ( !$title->exists() ) {
@@ -102,7 +102,7 @@ class DynamicSidebar {
 	 */
 	private static function doGroupSidebar() {
 		global $wgUser;
-		
+
 		// Get group membership array.
 		$groups = $wgUser->getEffectiveGroups();
 		// Did we find any groups?
