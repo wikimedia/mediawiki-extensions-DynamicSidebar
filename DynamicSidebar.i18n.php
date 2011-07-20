@@ -153,6 +153,13 @@ $messages['id'] = array(
 	'dynamicsidebar-desc' => 'Menyediakan sidebars dinamis berdasarkan halaman pengguna, kelompok, dan kategori',
 );
 
+/** Interlingue (Interlingue)
+ * @author Renan
+ */
+$messages['ie'] = array(
+	'dynamicsidebar-desc' => 'Provide barres látere dinamic baseat in págines de usator, gruppes, e categories',
+);
+
 /** Italian (Italiano)
  * @author Civvì
  */
