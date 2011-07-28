@@ -209,6 +209,13 @@ $messages['ml'] = array(
 	'dynamicsidebar-desc' => 'ഉപയോക്തൃതാളുകൾക്കും, സംഘങ്ങൾക്കും, വർഗ്ഗങ്ങൾക്കുമനുസരിച്ച് തത്സമയ സൈഡ്ബാറുകൾ നൽകുന്നു',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'dynamicsidebar-desc' => 'Menyediakan bar sisi yang dinamik berasaskan laman pengguna, kumpulan dan kategori',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
