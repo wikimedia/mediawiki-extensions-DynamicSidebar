@@ -59,7 +59,7 @@ $messages['ca'] = array(
  * @author The Evil IP address
  */
 $messages['de'] = array(
-	'dynamicsidebar-desc' => 'Ermöglicht dynamische Seitenleisten, die benutzer-, benutzergruppen- oder benutzerkategorienspezifisch sein können.',
+	'dynamicsidebar-desc' => 'Ermöglicht individuelle dynamische Seitenleisten für Benutzer, Benutzergruppen sowie Kategorien',
 );
 
 /** Lower Sorbian (Dolnoserbski)
