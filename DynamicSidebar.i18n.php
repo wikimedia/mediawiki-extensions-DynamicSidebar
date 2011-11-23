@@ -287,14 +287,14 @@ $messages['sl'] = array(
 	'dynamicsidebar-desc' => 'Omogoča dinamično stransko vrstico glede na uporabniške strani, skupine in kategorije',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'dynamicsidebar-desc' => 'Омогућава динамичке сајдбарове чији се садржај базира на корисничким странама, групама и категоријама',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪Srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'dynamicsidebar-desc' => 'Omogućava dinamičke sajdbarove čiji se sadržaj bazira na korisničkim stranama, grupama i kategorijama',
 );
