@@ -40,7 +40,7 @@ $wgExtensionCredits['other'][] = array(
 	'name' => 'DynamicSidebar',
 	'version' => '1.0a',
 	'author' => 'Ryan Lane',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:DynamicSidebar',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:DynamicSidebar',
 	'descriptionmsg' => 'dynamicsidebar-desc',
 );
 
