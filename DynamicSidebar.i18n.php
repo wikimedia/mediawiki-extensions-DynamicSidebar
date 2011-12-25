@@ -226,7 +226,7 @@ $messages['nl'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Audun
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'dynamicsidebar-desc' => 'Gir dynamiske sidelinjer basert på brukersider, grupper og kategorier',
 );
 
