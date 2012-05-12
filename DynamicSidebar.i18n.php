@@ -216,18 +216,18 @@ $messages['ms'] = array(
 	'dynamicsidebar-desc' => 'Menyediakan bar sisi yang dinamik berasaskan laman pengguna, kumpulan dan kategori',
 );
 
-/** Dutch (Nederlands)
- * @author Siebrand
- */
-$messages['nl'] = array(
-	'dynamicsidebar-desc' => "Maakt dynamische menubalk mogelijk gebaseerd op gebruikerspagina's, groepen en categorieën",
-);
-
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Audun
  */
 $messages['nb'] = array(
 	'dynamicsidebar-desc' => 'Gir dynamiske sidelinjer basert på brukersider, grupper og kategorier',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'dynamicsidebar-desc' => "Maakt dynamische menubalk mogelijk gebaseerd op gebruikerspagina's, groepen en categorieën",
 );
 
 /** Occitan (Occitan)
