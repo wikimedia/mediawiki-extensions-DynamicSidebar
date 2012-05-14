@@ -280,6 +280,13 @@ $messages['ru'] = array(
 	'dynamicsidebar-desc' => 'Обеспечивает динамические боковые панели на основе личных страниц участников, групп и категорий',
 );
 
+/** Slovak (Slovenčina)
+ * @author Helix84
+ */
+$messages['sk'] = array(
+	'dynamicsidebar-desc' => 'Poskytuje dynamické bočné panely na základe používateľských stránok, skupín a kategórií',
+);
+
 /** Slovenian (Slovenščina)
  * @author Dbc334
  */
