@@ -174,6 +174,13 @@ $messages['ja'] = array(
 	'dynamicsidebar-desc' => '利用者のページやグループ、カテゴリにもとづいて、動的に生成されるサイドバーを提供する。',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'dynamicsidebar-desc' => '사용자 문서, 그룹과 분류를 바탕으로 동적 사이드바를 제공',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
