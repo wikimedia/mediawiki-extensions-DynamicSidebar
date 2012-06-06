@@ -168,10 +168,11 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
-	'dynamicsidebar-desc' => '利用者のページやグループ、カテゴリにもとづいて、動的に生成されるサイドバーを提供する。',
+	'dynamicsidebar-desc' => '利用者ページ、グループ、カテゴリに基づいて、動的なサイドバーを提供する',
 );
 
 /** Korean (한국어)
