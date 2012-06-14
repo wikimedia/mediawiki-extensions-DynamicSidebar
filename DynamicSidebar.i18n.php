@@ -19,7 +19,7 @@ $messages['qqq'] = array(
 	'dynamicsidebar-desc' => '{{desc}}',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -33,21 +33,21 @@ $messages['be-tarask'] = array(
 	'dynamicsidebar-desc' => 'Дадае дынамічныя бакавыя панэлі на старонках удзельнікаў, групаў і катэгорыяў.',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Y-M D
  */
 $messages['br'] = array(
 	'dynamicsidebar-desc' => 'Reiñ a ra barrennoù kostez dinamek diazezet war pajennoù an implijerien, o strolladoù hag ar rummadoù',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
 	'dynamicsidebar-desc' => 'Omogućava dinamičke alatne trake zasnovane na korisničkim stranicama, grupama i kategorijama',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Paucabot
  */
 $messages['ca'] = array(
@@ -76,28 +76,28 @@ $messages['el'] = array(
 	'dynamicsidebar-desc' => 'Παρέχει δυναμική πλευρική μπάρα που βασίζεται σε σελίδες χρηστών, ομάδες και κατηγορίες',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Locos epraix
  */
 $messages['es'] = array(
 	'dynamicsidebar-desc' => 'Proporciona barras laterales dinámicas basadas en páginas de usuario, grupos y categorías',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  */
 $messages['eu'] = array(
 	'dynamicsidebar-desc' => 'Lankide orrialde, talde eta kategorietan oinarritutako barra dinamikoak eskaintzen ditu',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Nike
  */
 $messages['fi'] = array(
 	'dynamicsidebar-desc' => 'Mahdollistaa dynaamiset sivupalkit riippuen käyttäjästä, käyttäjäryhmästä tai luokasta',
 );
 
-/** French (Français)
+/** French (français)
  * @author IAlex
  */
 $messages['fr'] = array(
@@ -132,14 +132,14 @@ $messages['hsb'] = array(
 	'dynamicsidebar-desc' => 'Dodawa dynamiske bóčnicy na zakładźe wužiwarskich stronow, skupinow a kategorijow',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Glanthor Reviol
  */
 $messages['hu'] = array(
 	'dynamicsidebar-desc' => 'Dinamikus oldalsávok felhasználói lapok, csoportok és kategóriák alapján',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -160,7 +160,7 @@ $messages['ie'] = array(
 	'dynamicsidebar-desc' => 'Provide barres látere dinamic baseat in págines de usator, gruppes, e categories',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Civvì
  */
 $messages['it'] = array(
@@ -203,7 +203,7 @@ $messages['mg'] = array(
 	'dynamicsidebar-desc' => "Manome anja dinamika antsisiny mifototra amin'ny pejim-pikambana, ny vondrony ary ny sokajy",
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -238,14 +238,14 @@ $messages['nl'] = array(
 	'dynamicsidebar-desc' => "Maakt dynamische menubalk mogelijk gebaseerd op gebruikerspagina's, groepen en categorieën",
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
 	'dynamicsidebar-desc' => 'Provesís de barras lateralas dinamicas basadas sus las paginas dels utilizaires, lors gropes e las categorias',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Sp5uhe
  */
 $messages['pl'] = array(
@@ -260,56 +260,56 @@ $messages['pms'] = array(
 	'dynamicsidebar-desc' => "A dà 'd bare lateraj dinàmiche basà dzora a le pàgine dj'utent, soe partìe e soe categorìe",
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  */
 $messages['pt'] = array(
 	'dynamicsidebar-desc' => 'Cria barras laterais dinâmicas baseadas nas páginas, grupos e categorias dos utilizadores',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Giro720
  */
 $messages['pt-br'] = array(
 	'dynamicsidebar-desc' => 'Cria barras laterais dinâmicas baseadas nas páginas, grupos e categorias dos utilizadores',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
 	'dynamicsidebar-desc' => "Fornisce 'na barra laterale dinameche basate sus a le pàggene utende, gruppe e categorije",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'dynamicsidebar-desc' => 'Обеспечивает динамические боковые панели на основе личных страниц участников, групп и категорий',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
 	'dynamicsidebar-desc' => 'Poskytuje dynamické bočné panely na základe používateľských stránok, skupín a kategórií',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
 	'dynamicsidebar-desc' => 'Omogoča dinamično stransko vrstico glede na uporabniške strani, skupine in kategorije',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'dynamicsidebar-desc' => 'Омогућава динамичке сајдбарове чији се садржај базира на корисничким странама, групама и категоријама',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'dynamicsidebar-desc' => 'Omogućava dinamičke sajdbarove čiji se sadržaj bazira na korisničkim stranama, grupama i kategorijama',
 );
@@ -321,7 +321,7 @@ $messages['su'] = array(
 	'dynamicsidebar-desc' => 'Nyadiakeun kolom sisi dinamis dumasar kaca, kelompok, jeung kategori pamaké',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Sertion
  */
 $messages['sv'] = array(
@@ -349,7 +349,7 @@ $messages['tr'] = array(
 	'dynamicsidebar-desc' => 'Kullanıcı sayfaları, gruplar ve kategorilere dayanarak dinamik kenar çubukları sağlar',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Тест
  */
 $messages['uk'] = array(
@@ -370,12 +370,12 @@ $messages['yi'] = array(
 	'dynamicsidebar-desc' => 'באַזארגט דינאַמישע זײַטפאַסן באַזירט אויף באניצער בלעטער, גרופעס און קאַטעגאריעס',
 );
 
-/** Simplified Chinese (‪中文(简体)‬) */
+/** Simplified Chinese (‪中文（简体）‬) */
 $messages['zh-hans'] = array(
 	'dynamicsidebar-desc' => '根据用户，组别和类别提供动态页面侧边栏',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Frankou
  */
 $messages['zh-hant'] = array(
