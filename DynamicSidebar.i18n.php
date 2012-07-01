@@ -26,7 +26,7 @@ $messages['ast'] = array(
 	'dynamicsidebar-desc' => "Ufre barres llaterales dinámiques basaes nes páxines d'usuariu, grupos y categoríes",
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -62,7 +62,7 @@ $messages['de'] = array(
 	'dynamicsidebar-desc' => 'Ermöglicht individuelle dynamische Seitenleisten für Benutzer, Benutzergruppen sowie Kategorien',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -104,7 +104,7 @@ $messages['fr'] = array(
 	'dynamicsidebar-desc' => 'Fournit des barres latérales dynamiques basées sur les pages des utilisateurs, leurs groupes et les catégories',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -125,7 +125,7 @@ $messages['he'] = array(
 	'dynamicsidebar-desc' => 'אספקת סרגלי צד דינמיים מבוססים על דפי המשתמשים, הקבוצות והקטגוריות',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
