@@ -224,7 +224,7 @@ $messages['ms'] = array(
 	'dynamicsidebar-desc' => 'Menyediakan bar sisi yang dinamik berasaskan laman pengguna, kumpulan dan kategori',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Audun
  */
 $messages['nb'] = array(
