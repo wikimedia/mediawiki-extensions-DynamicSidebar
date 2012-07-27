@@ -24,7 +24,7 @@ class DynamicSidebar {
 	 */
 	public static function modifySidebar( $skin, &$sidebar ) {
 		global $wgDynamicSidebarUseGroups, $wgDynamicSidebarUseUserpages;
-		global $wgDynamicSidebarUseCategories;
+		global $wgDynamicSidebarUseCategories, $wgDynamicSidebarUsePageCategories;
 
 		self::printDebug( "Entering modifySidebar" );
 		$groupSB = array();
@@ -41,6 +41,10 @@ class DynamicSidebar {
 		if ( $wgDynamicSidebarUseCategories && isset( $sidebar['CATEGORY-SIDEBAR'] ) ) {
 			self::printDebug( "Using category sidebar" );
 			$skin->addToSidebarPlain( $catSB, self::doCategorySidebar() );
+		}
+		if ( $wgDynamicSidebarUsePageCategories && isset( $sidebar['CATEGORY-SIDEBAR'] ) ) {
+			self::printDebug( "Using category sidebar" );
+			$skin->addToSidebarPlain( $catSB, self::doPageCategorySidebar() );
 		}
 
 		$sidebar_copy = array();
@@ -127,20 +131,28 @@ class DynamicSidebar {
 		return $text;
 	}
 
+	private static function doPageCategorySidebar() {
+		global $wgTitle;
+
+		return self::doCategorySidebar( $wgTitle->getParentCategories() );
+	}
+
 	/**
 	 * Grabs the sidebar for the current user's categories
 	 *
 	 * @access private
 	 * @return string
 	 */
-	private static function doCategorySidebar() {
+	private static function doCategorySidebar( $categories = null ) {
 		global $wgUser;
 
 		self::printDebug( "User name: {$wgUser->getName()}" );
+		if( $categories === null ) {
 		$categories = $wgUser->getUserPage()->getParentCategories();
+		}
 
 		// Did we find any categories?
-		if ( count( $categories ) == 0 ) {
+		if ( !is_array( $categories) || count( $categories ) == 0 ) {
 			// Remove this sidebar if not.
 			return '';
 		}

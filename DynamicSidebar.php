@@ -35,6 +35,9 @@ $wgDynamicSidebarUseGroups = true;
 // Allow category based sidebars under MediaWiki:Sidebar/Group:<category>
 $wgDynamicSidebarUseCategories = true;
 
+// Allow category based sidebars under MediaWiki:Sidebar/Group:<category>
+$wgDynamicSidebarUsePageCategories = false;
+
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'DynamicSidebar',
