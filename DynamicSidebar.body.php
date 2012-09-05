@@ -109,6 +109,7 @@ class DynamicSidebar {
 
 		// Get group membership array.
 		$groups = $wgUser->getEffectiveGroups();
+		wfRunHooks( 'DynamicSidebarGetGroups', array( &$groups ) );
 		// Did we find any groups?
 		if ( count( $groups ) == 0 ) {
 			// Remove this sidebar if not
