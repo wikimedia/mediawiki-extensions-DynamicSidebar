@@ -26,7 +26,7 @@ $messages['ast'] = array(
 	'dynamicsidebar-desc' => "Ufre barres llaterales dinámiques basaes nes páxines d'usuariu, grupos y categoríes",
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -224,7 +224,7 @@ $messages['ms'] = array(
 	'dynamicsidebar-desc' => 'Menyediakan bar sisi yang dinamik berasaskan laman pengguna, kumpulan dan kategori',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Audun
  */
 $messages['nb'] = array(
@@ -302,14 +302,14 @@ $messages['sl'] = array(
 	'dynamicsidebar-desc' => 'Omogoča dinamično stransko vrstico glede na uporabniške strani, skupine in kategorije',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'dynamicsidebar-desc' => 'Омогућава динамичке сајдбарове чији се садржај базира на корисничким странама, групама и категоријама',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬) */
+/** Serbian (Latin script) (srpski (latinica)‎) */
 $messages['sr-el'] = array(
 	'dynamicsidebar-desc' => 'Omogućava dinamičke sajdbarove čiji se sadržaj bazira na korisničkim stranama, grupama i kategorijama',
 );
@@ -370,12 +370,12 @@ $messages['yi'] = array(
 	'dynamicsidebar-desc' => 'באַזארגט דינאַמישע זײַטפאַסן באַזירט אויף באניצער בלעטער, גרופעס און קאַטעגאריעס',
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $messages['zh-hans'] = array(
 	'dynamicsidebar-desc' => '根据用户，组别和类别提供动态页面侧边栏',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Frankou
  */
 $messages['zh-hant'] = array(
