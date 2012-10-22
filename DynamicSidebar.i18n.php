@@ -309,7 +309,8 @@ $messages['sr-ec'] = array(
 	'dynamicsidebar-desc' => 'Омогућава динамичке сајдбарове чији се садржај базира на корисничким странама, групама и категоријама',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'dynamicsidebar-desc' => 'Omogućava dinamičke sajdbarove čiji se sadržaj bazira na korisničkim stranama, grupama i kategorijama',
 );
@@ -370,7 +371,8 @@ $messages['yi'] = array(
 	'dynamicsidebar-desc' => 'באַזארגט דינאַמישע זײַטפאַסן באַזירט אויף באניצער בלעטער, גרופעס און קאַטעגאריעס',
 );
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Simplified Chinese (中文（简体）‎)
+ */
 $messages['zh-hans'] = array(
 	'dynamicsidebar-desc' => '根据用户，组别和类别提供动态页面侧边栏',
 );
@@ -381,4 +383,3 @@ $messages['zh-hans'] = array(
 $messages['zh-hant'] = array(
 	'dynamicsidebar-desc' => '根據用戶，組別和類別提供動態頁面側邊欄',
 );
-
