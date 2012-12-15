@@ -26,6 +26,13 @@ $messages['ast'] = array(
 	'dynamicsidebar-desc' => "Ufre barres llaterales dinámiques basaes nes páxines d'usuariu, grupos y categoríes",
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Mousa
+ */
+$messages['azb'] = array(
+	'dynamicsidebar-desc' => 'ایستیفاده‌چی صحیفه‌لری، گروپلار و بؤلمه‌لره دایاناراق، دینامیک یان‌چوبوقلاری حاضیرلایار',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
