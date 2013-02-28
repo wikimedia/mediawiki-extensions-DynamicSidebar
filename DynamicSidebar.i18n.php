@@ -13,10 +13,11 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Shirayuki
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'dynamicsidebar-desc' => '{{desc}}',
+	'dynamicsidebar-desc' => '{{desc|name=Dynamic Sidebar|url=http://www.mediawiki.org/wiki/Extension:DynamicSidebar}}',
 );
 
 /** Asturian (asturianu)
