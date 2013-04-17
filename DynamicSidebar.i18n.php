@@ -62,6 +62,13 @@ $messages['ca'] = array(
 	'dynamicsidebar-desc' => "Proporciona barres dinàmiques laterals basades en les pàgines d'usuari, grups i categories",
 );
 
+/** Czech (česky)
+ * @author Jezevec
+ */
+$messages['cs'] = array(
+	'dynamicsidebar-desc' => 'Poskytuje dynamické postranní lišty založené na stránkách uživatelů, skupin a kategorií',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  * @author The Evil IP address
