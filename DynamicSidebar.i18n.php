@@ -105,6 +105,13 @@ $messages['eu'] = array(
 	'dynamicsidebar-desc' => 'Lankide orrialde, talde eta kategorietan oinarritutako barra dinamikoak eskaintzen ditu',
 );
 
+/** Persian (فارسی)
+ * @author Reza1615
+ */
+$messages['fa'] = array(
+	'dynamicsidebar-desc' => 'فراهم‌کردن نوار جانبی بر پایهٔ صفحهٔ کاربری، گروه‌ها و رده‌ها',
+);
+
 /** Finnish (suomi)
  * @author Nike
  */
