@@ -41,6 +41,13 @@ $messages['be-tarask'] = array(
 	'dynamicsidebar-desc' => 'Дадае дынамічныя бакавыя панэлі на старонках удзельнікаў, групаў і катэгорыяў.',
 );
 
+/** Bengali (বাংলা)
+ * @author Aftab1995
+ */
+$messages['bn'] = array(
+	'dynamicsidebar-desc' => 'ব্যবহারকারী পাতা, দল ও বিষয়শ্রেণী ভিত্তিক গতিশীল পার্শ্বদণ্ড প্রদান',
+);
+
 /** Breton (brezhoneg)
  * @author Y-M D
  */
