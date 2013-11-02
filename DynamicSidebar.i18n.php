@@ -220,9 +220,10 @@ $messages['ksh'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
-	'dynamicsidebar-desc' => 'Generéiert dynamesch säitlech Menuen déi op de Benotzersäiten, Gruppen a Kategorie bséieren',
+	'dynamicsidebar-desc' => 'Generéiert dynamesch säitlech Menüen déi op de Benotzersäiten, Gruppen a Kategorie bséieren',
 );
 
 /** Malagasy (Malagasy)
