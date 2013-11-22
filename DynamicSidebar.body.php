@@ -44,7 +44,7 @@ class DynamicSidebar {
 		}
 		if ( $wgDynamicSidebarUsePageCategories && isset( $sidebar['CATEGORY-SIDEBAR'] ) ) {
 			self::printDebug( "Using category sidebar" );
-			$skin->addToSidebarPlain( $catSB, self::doPageCategorySidebar() );
+			$skin->addToSidebarPlain( $catSB, self::doPageCategorySidebar( $skin->getTitle() ) );
 		}
 
 		$sidebar_copy = array();
@@ -132,10 +132,8 @@ class DynamicSidebar {
 		return $text;
 	}
 
-	private static function doPageCategorySidebar() {
-		global $wgTitle;
-
-		return self::doCategorySidebar( $wgTitle->getParentCategories() );
+	private static function doPageCategorySidebar( $title ) {
+		return self::doCategorySidebar( $title->getParentCategories() );
 	}
 
 	/**
