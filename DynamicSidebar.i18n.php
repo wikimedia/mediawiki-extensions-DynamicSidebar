@@ -69,7 +69,7 @@ $messages['ca'] = array(
 	'dynamicsidebar-desc' => "Proporciona barres dinàmiques laterals basades en les pàgines d'usuari, grups i categories",
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Jezevec
  */
 $messages['cs'] = array(
