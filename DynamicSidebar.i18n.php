@@ -318,6 +318,13 @@ $messages['ru'] = array(
 	'dynamicsidebar-desc' => 'Обеспечивает динамические боковые панели на основе личных страниц участников, групп и категорий',
 );
 
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'dynamicsidebar-desc' => 'Provides dynamic sidebars based oan uiser pages, gruips, an categories',
+);
+
 /** Slovak (slovenčina)
  * @author Helix84
  */
