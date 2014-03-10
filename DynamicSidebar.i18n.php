@@ -322,7 +322,7 @@ $messages['ru'] = array(
  * @author John Reid
  */
 $messages['sco'] = array(
-	'dynamicsidebar-desc' => 'Provides dynamic sidebars based oan uiser pages, gruips, an categories',
+	'dynamicsidebar-desc' => 'Provides dynamic sidebaurs based oan uiser pages, groops, n categeries',
 );
 
 /** Slovak (slovenčina)
