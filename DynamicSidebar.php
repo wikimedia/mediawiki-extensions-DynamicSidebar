@@ -41,7 +41,7 @@ $wgDynamicSidebarUsePageCategories = false;
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'DynamicSidebar',
-	'version' => '1.0b',
+	'version' => '1.1',
 	'author' => 'Ryan Lane',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:DynamicSidebar',
 	'descriptionmsg' => 'dynamicsidebar-desc',
@@ -50,7 +50,7 @@ $wgExtensionCredits['other'][] = array(
 $wgExtensionFunctions[] = array( 'DynamicSidebar', 'setup' );
 $wgHooks['SkinBuildSidebar'][] = 'DynamicSidebar::modifySidebar';
 
-$dir = dirname( __FILE__ ) . '/';
-$wgAutoloadClasses['DynamicSidebar'] = $dir . 'DynamicSidebar.body.php';
-$wgExtensionMessagesFiles['DynamicSidebar'] = $dir . 'DynamicSidebar.i18n.php';
+$wgAutoloadClasses['DynamicSidebar'] = __DIR__ . '/DynamicSidebar.body.php';
+$wgMessagesDirs['DynamicSidebar'] = __DIR__ . '/i18n';
+$wgExtensionMessagesFiles['DynamicSidebar'] = __DIR__ . '/DynamicSidebar.i18n.php';
 
