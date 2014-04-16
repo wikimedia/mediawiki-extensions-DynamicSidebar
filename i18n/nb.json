@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Audun"
-        ]
-    },
-    "dynamicsidebar-desc": "Gir dynamiske sidelinjer basert på brukersider, grupper og kategorier"
+	"@metadata": {
+		"authors": [
+			"Audun"
+		]
+	},
+	"dynamicsidebar-desc": "Gir dynamiske sidelinjer basert på brukersider, grupper og kategorier"
 }

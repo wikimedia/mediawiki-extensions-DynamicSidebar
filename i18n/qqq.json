@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Shirayuki",
-            "Umherirrender"
-        ]
-    },
-    "dynamicsidebar-desc": "{{desc|name=Dynamic Sidebar|url=http://www.mediawiki.org/wiki/Extension:DynamicSidebar}}"
+	"@metadata": {
+		"authors": [
+			"Shirayuki",
+			"Umherirrender"
+		]
+	},
+	"dynamicsidebar-desc": "{{desc|name=Dynamic Sidebar|url=http://www.mediawiki.org/wiki/Extension:DynamicSidebar}}"
 }

@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Giro720"
-        ]
-    },
-    "dynamicsidebar-desc": "Cria barras laterais dinâmicas baseadas nas páginas, grupos e categorias dos utilizadores"
+	"@metadata": {
+		"authors": [
+			"Giro720"
+		]
+	},
+	"dynamicsidebar-desc": "Cria barras laterais dinâmicas baseadas nas páginas, grupos e categorias dos utilizadores"
 }

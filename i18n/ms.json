@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Anakmalaysia"
-        ]
-    },
-    "dynamicsidebar-desc": "Menyediakan bar sisi yang dinamik berasaskan laman pengguna, kumpulan dan kategori"
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia"
+		]
+	},
+	"dynamicsidebar-desc": "Menyediakan bar sisi yang dinamik berasaskan laman pengguna, kumpulan dan kategori"
 }
