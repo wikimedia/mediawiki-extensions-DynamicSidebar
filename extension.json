@@ -1,0 +1,33 @@
+{
+	"name": "DynamicSidebar",
+	"version": "1.1",
+	"author": "Ryan Lane",
+	"url": "https://www.mediawiki.org/wiki/Extension:DynamicSidebar",
+	"descriptionmsg": "dynamicsidebar-desc",
+	"type": "other",
+	"config": {
+		"DynamicSidebarUseCategories": true,
+		"DynamicSidebarUseGroups": true,
+		"DynamicSidebarUsePageCategories": false,
+		"DynamicSidebarUseUserpages": true
+	},
+	"ExtensionMessagesFiles": {
+		"DynamicSidebar": "DynamicSidebar.i18n.php"
+	},
+	"Hooks": {
+		"SkinBuildSidebar": [
+			"DynamicSidebar::modifySidebar"
+		]
+	},
+	"MessagesDirs": {
+		"DynamicSidebar": [
+			"i18n"
+		]
+	},
+	"ExtensionFunctions": [
+		"DynamicSidebar::setup"
+	],
+	"AutoloadClasses": {
+		"DynamicSidebar": "DynamicSidebar.body.php"
+	}
+}

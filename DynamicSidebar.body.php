@@ -9,6 +9,8 @@ class DynamicSidebar {
 		// Don't pollute the sidebar cache for non-logged-in users
 		// Also ensure that logged-in users are getting dynamic content
 		// FIXME: Only do this for users who should actually get the non-standard sidebar
+		// FIXME: Accessing $wgUser inside an extension function can break depending on
+		// what other extensions are installed
 		if ( $wgUser->isLoggedIn() ) {
 			$wgEnableSidebarCache = false;
 		}

@@ -47,7 +47,7 @@ $wgExtensionCredits['other'][] = array(
 	'descriptionmsg' => 'dynamicsidebar-desc',
 );
 
-$wgExtensionFunctions[] = array( 'DynamicSidebar', 'setup' );
+$wgExtensionFunctions[] = 'DynamicSidebar::setup';
 $wgHooks['SkinBuildSidebar'][] = 'DynamicSidebar::modifySidebar';
 
 $wgAutoloadClasses['DynamicSidebar'] = __DIR__ . '/DynamicSidebar.body.php';
