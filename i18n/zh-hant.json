@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Frankou"
+			"Frankou",
+			"LNDDYL"
 		]
 	},
-	"dynamicsidebar-desc": "根據用戶，組別和類別提供動態頁面側邊欄"
+	"dynamicsidebar-desc": "根據使用者頁面、群組及分類提供動態頁面側邊列"
 }
