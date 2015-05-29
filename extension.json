@@ -29,5 +29,6 @@
 	],
 	"AutoloadClasses": {
 		"DynamicSidebar": "DynamicSidebar.body.php"
-	}
+	},
+	"manifest_version": 1
 }
