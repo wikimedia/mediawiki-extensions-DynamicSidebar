@@ -15,7 +15,7 @@
 		"DynamicSidebar": "DynamicSidebar.i18n.php"
 	},
 	"Hooks": {
-		"SkinBuildSidebar": [
+		"SidebarBeforeOutput": [
 			"DynamicSidebar::modifySidebar"
 		]
 	},
@@ -24,9 +24,6 @@
 			"i18n"
 		]
 	},
-	"ExtensionFunctions": [
-		"DynamicSidebar::setup"
-	],
 	"AutoloadClasses": {
 		"DynamicSidebar": "DynamicSidebar.body.php"
 	},
