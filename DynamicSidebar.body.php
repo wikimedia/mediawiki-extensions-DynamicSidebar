@@ -1,24 +1,7 @@
 <?php
 class DynamicSidebar {
 	/**
-	 * Called through $wgExtensionFunctions. Disables sidebar cache if necessary
-	 */
-	public static function setup() {
-		global $wgUser, $wgEnableSidebarCache;
-
-		// Don't pollute the sidebar cache for non-logged-in users
-		// Also ensure that logged-in users are getting dynamic content
-		// FIXME: Only do this for users who should actually get the non-standard sidebar
-		// FIXME: Accessing $wgUser inside an extension function can break depending on
-		// what other extensions are installed
-		if ( $wgUser->isLoggedIn() ) {
-			$wgEnableSidebarCache = false;
-		}
-		return true;
-	}
-
-	/**
-	 * Called from SkinBuildSidebar hook. Modifies the sidebar
+	 * Called from SidebarBeforeOutput hook. Modifies the sidebar
 	 * via callbacks.
 	 *
 	 * @param Skin $skin
