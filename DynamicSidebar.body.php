@@ -27,11 +27,11 @@ class DynamicSidebar {
 		}
 		if ( $wgDynamicSidebarUseCategories && isset( $sidebar['CATEGORY-SIDEBAR'] ) ) {
 			self::printDebug( "Using category sidebar" );
-			$skin->addToSidebarPlain( $catSB, self::doCategorySidebar() );
+			$skin->addToSidebarPlain( $catSB, self::doCategorySidebar( $user ) );
 		}
 		if ( $wgDynamicSidebarUsePageCategories && isset( $sidebar['CATEGORY-SIDEBAR'] ) ) {
 			self::printDebug( "Using category sidebar" );
-			$skin->addToSidebarPlain( $catSB, self::doPageCategorySidebar( $skin->getTitle() ) );
+			$skin->addToSidebarPlain( $catSB, self::doPageCategorySidebar( $user, $skin->getTitle() ) );
 		}
 
 		$sidebar_copy = array();
@@ -117,25 +117,25 @@ class DynamicSidebar {
 	}
 
 	/**
+	 * @param User $user
 	 * @param Title $title
 	 * @return string
 	 */
-	private static function doPageCategorySidebar( $title ) {
-		return self::doCategorySidebar( $title->getParentCategories() );
+	private static function doPageCategorySidebar( User $user, $title ) {
+		return self::doCategorySidebar( $user, $title->getParentCategories() );
 	}
 
 	/**
 	 * Grabs the sidebar for the current user's categories
 	 *
+	 * @param User $user
 	 * @param array|null $categories
 	 * @return string
 	 */
-	private static function doCategorySidebar( $categories = null ) {
-		global $wgUser;
-
-		self::printDebug( "User name: {$wgUser->getName()}" );
+	private static function doCategorySidebar( User $user, $categories = null ) {
+		self::printDebug( "User name: {$user->getName()}" );
 		if( $categories === null ) {
-			$categories = $wgUser->getUserPage()->getParentCategories();
+			$categories = $user->getUserPage()->getParentCategories();
 		}
 
 		// Did we find any categories?
