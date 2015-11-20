@@ -16,13 +16,14 @@ class DynamicSidebar {
 		$groupSB = array();
 		$userSB = array();
 		$catSB = array();
+		$user = $skin->getUser();
 		if ( $wgDynamicSidebarUseGroups && isset( $sidebar['GROUP-SIDEBAR'] ) ) {
 			self::printDebug( "Using group sidebar" );
-			$skin->addToSidebarPlain( $groupSB, self::doGroupSidebar() );
+			$skin->addToSidebarPlain( $groupSB, self::doGroupSidebar( $user ) );
 		}
 		if ( $wgDynamicSidebarUseUserpages && isset( $sidebar['USER-SIDEBAR'] ) ) {
 			self::printDebug( "Using user sidebar" );
-			$skin->addToSidebarPlain( $userSB, self::doUserSidebar() );
+			$skin->addToSidebarPlain( $userSB, self::doUserSidebar( $user ) );
 		}
 		if ( $wgDynamicSidebarUseCategories && isset( $sidebar['CATEGORY-SIDEBAR'] ) ) {
 			self::printDebug( "Using category sidebar" );
@@ -65,11 +66,11 @@ class DynamicSidebar {
 	 * Grabs the sidebar for the current user
 	 * User:<username>/Sidebar
 	 *
+	 * @param User $user
 	 * @return string
 	 */
-	private static function doUserSidebar() {
-		global $wgUser;
-		$username = $wgUser->getName();
+	private static function doUserSidebar( User $user ) {
+		$username = $user->getName();
 
 		// does 'User:<username>/Sidebar' page exist?
 		$title = Title::makeTitle( NS_USER, $username . '/Sidebar' );
@@ -86,13 +87,12 @@ class DynamicSidebar {
 	/**
 	 * Grabs the sidebar for the current user's groups
 	 *
+	 * @param User $user
 	 * @return string
 	 */
-	private static function doGroupSidebar() {
-		global $wgUser;
-
+	private static function doGroupSidebar( User $user ) {
 		// Get group membership array.
-		$groups = $wgUser->getEffectiveGroups();
+		$groups = $user->getEffectiveGroups();
 		Hooks::run( 'DynamicSidebarGetGroups', array( &$groups ) );
 		// Did we find any groups?
 		if ( count( $groups ) == 0 ) {
