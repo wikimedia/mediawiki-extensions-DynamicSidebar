@@ -81,7 +81,7 @@ class DynamicSidebar {
 
 		$revid = $title->getLatestRevID();
 		$a = new Article( $title, $revid );
-		return $a->getContent();
+		return ContentHandler::getContentText( $a->getPage()->getContent() );
 	}
 
 	/**
@@ -110,7 +110,7 @@ class DynamicSidebar {
 			}
 			$revid = $title->getLatestRevID();
 			$a = new Article( $title, $revid );
-			$text .= $a->getContent() . "\n";
+			$text .= ContentHandler::getContentText( $a->getPage()->getContent() ) . "\n";
 
 		}
 		return $text;
@@ -164,7 +164,7 @@ class DynamicSidebar {
 			}
 			$revid = $title->getLatestRevID();
 			$a = new Article( $title, $revid );
-			$text .= $a->getContent() . "\n";
+			$text .= ContentHandler::getContentText( $a->getPage()->getContent() ) . "\n";
 			self::printDebug( "$category text output is: $text" );
 		}
 		return $text;
