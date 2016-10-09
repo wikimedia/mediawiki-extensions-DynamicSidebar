@@ -19,37 +19,15 @@
 # This extension is loosely based on the SidebarEx extension by Jean-Lou Dupont;
 # See: http://www.mediawiki.org/wiki/Extension:SidebarEx
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "Not a valid entry point";
-	exit( 1 );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'DynamicSidebar' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['DynamicSidebar'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for DynamicSidebar extension. Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the DynamicSidebar extension requires MediaWiki 1.25+' );
 }
-
-// Set defaults
-
-// Allow users to create their own custom sidebars under User:<username>/Sidebar
-$wgDynamicSidebarUseUserpages = true;
-
-// Allow group sidebars under MediaWiki:Sidebar/Group:<group>
-$wgDynamicSidebarUseGroups = true;
-
-// Allow category based sidebars under MediaWiki:Sidebar/Group:<category>
-$wgDynamicSidebarUseCategories = true;
-
-// Allow category based sidebars under MediaWiki:Sidebar/Group:<category>
-$wgDynamicSidebarUsePageCategories = false;
-
-$wgExtensionCredits['other'][] = array(
-	'path' => __FILE__,
-	'name' => 'DynamicSidebar',
-	'version' => '1.1',
-	'author' => 'Ryan Lane',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:DynamicSidebar',
-	'descriptionmsg' => 'dynamicsidebar-desc',
-);
-
-$wgHooks['SidebarBeforeOutput'][] = 'DynamicSidebar::modifySidebar';
-
-$wgAutoloadClasses['DynamicSidebar'] = __DIR__ . '/DynamicSidebar.body.php';
-$wgMessagesDirs['DynamicSidebar'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['DynamicSidebar'] = __DIR__ . '/DynamicSidebar.i18n.php';
-
