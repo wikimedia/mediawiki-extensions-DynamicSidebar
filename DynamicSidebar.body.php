@@ -13,9 +13,9 @@ class DynamicSidebar {
 		global $wgDynamicSidebarUseCategories, $wgDynamicSidebarUsePageCategories;
 
 		self::printDebug( "Entering modifySidebar" );
-		$groupSB = array();
-		$userSB = array();
-		$catSB = array();
+		$groupSB = [];
+		$userSB = [];
+		$catSB = [];
 		$user = $skin->getUser();
 		if ( $wgDynamicSidebarUseGroups && isset( $sidebar['GROUP-SIDEBAR'] ) ) {
 			self::printDebug( "Using group sidebar" );
@@ -34,7 +34,7 @@ class DynamicSidebar {
 			$skin->addToSidebarPlain( $catSB, self::doPageCategorySidebar( $user, $skin->getTitle() ) );
 		}
 
-		$sidebar_copy = array();
+		$sidebar_copy = [];
 
 		foreach ( $sidebar as $sidebar_key => $sidebar_item ) {
 			if ( $sidebar_key == 'GROUP-SIDEBAR' ) {
@@ -93,7 +93,7 @@ class DynamicSidebar {
 	private static function doGroupSidebar( User $user ) {
 		// Get group membership array.
 		$groups = $user->getEffectiveGroups();
-		Hooks::run( 'DynamicSidebarGetGroups', array( &$groups ) );
+		Hooks::run( 'DynamicSidebarGetGroups', [ &$groups ] );
 		// Did we find any groups?
 		if ( count( $groups ) == 0 ) {
 			// Remove this sidebar if not
@@ -134,7 +134,7 @@ class DynamicSidebar {
 	 */
 	private static function doCategorySidebar( User $user, $categories = null ) {
 		self::printDebug( "User name: {$user->getName()}" );
-		if( $categories === null ) {
+		if ( $categories === null ) {
 			$categories = $user->getUserPage()->getParentCategories();
 		}
 
