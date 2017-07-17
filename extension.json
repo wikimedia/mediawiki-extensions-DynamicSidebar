@@ -11,9 +11,6 @@
 		"DynamicSidebarUsePageCategories": false,
 		"DynamicSidebarUseUserpages": true
 	},
-	"ExtensionMessagesFiles": {
-		"DynamicSidebar": "DynamicSidebar.i18n.php"
-	},
 	"Hooks": {
 		"SidebarBeforeOutput": [
 			"DynamicSidebar::modifySidebar"
