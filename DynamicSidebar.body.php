@@ -5,7 +5,7 @@ class DynamicSidebar {
 	 * via callbacks.
 	 *
 	 * @param Skin $skin
-	 * @param array $sidebar
+	 * @param array &$sidebar
 	 * @return bool
 	 */
 	public static function modifySidebar( $skin, &$sidebar ) {
