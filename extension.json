@@ -4,7 +4,7 @@
 	"author": "Ryan Lane",
 	"url": "https://www.mediawiki.org/wiki/Extension:DynamicSidebar",
 	"descriptionmsg": "dynamicsidebar-desc",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"config": {
 		"DynamicSidebarUseCategories": true,
