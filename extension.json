@@ -23,7 +23,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"DynamicSidebar": "DynamicSidebar.body.php"
+		"DynamicSidebar": "includes/DynamicSidebar.php"
 	},
 	"manifest_version": 1
 }
