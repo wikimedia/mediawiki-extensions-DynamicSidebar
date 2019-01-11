@@ -1,4 +1,5 @@
 <?php
+
 class DynamicSidebar {
 	/**
 	 * Called from SidebarBeforeOutput hook. Modifies the sidebar
@@ -8,9 +9,11 @@ class DynamicSidebar {
 	 * @param array &$sidebar
 	 * @return bool
 	 */
-	public static function modifySidebar( $skin, &$sidebar ) {
-		global $wgDynamicSidebarUseGroups, $wgDynamicSidebarUseUserpages;
-		global $wgDynamicSidebarUseCategories, $wgDynamicSidebarUsePageCategories;
+	public static function modifySidebar( Skin $skin, array &$sidebar ) {
+		global $wgDynamicSidebarUseGroups,
+			$wgDynamicSidebarUseUserpages,
+			$wgDynamicSidebarUseCategories,
+			$wgDynamicSidebarUsePageCategories;
 
 		self::printDebug( "Entering modifySidebar" );
 		$groupSB = [];
@@ -121,7 +124,7 @@ class DynamicSidebar {
 	 * @param Title $title
 	 * @return string
 	 */
-	private static function doPageCategorySidebar( User $user, $title ) {
+	private static function doPageCategorySidebar( User $user, Title $title ) {
 		return self::doCategorySidebar( $user, $title->getParentCategories() );
 	}
 
@@ -132,7 +135,7 @@ class DynamicSidebar {
 	 * @param array|null $categories
 	 * @return string
 	 */
-	private static function doCategorySidebar( User $user, $categories = null ) {
+	private static function doCategorySidebar( User $user, array $categories = null ) {
 		self::printDebug( "User name: {$user->getName()}" );
 		if ( $categories === null ) {
 			$categories = $user->getUserPage()->getParentCategories();
@@ -177,7 +180,7 @@ class DynamicSidebar {
 	 * @param string $debugText
 	 * @param array $debugArr
 	 */
-	private static function printDebug( $debugText, $debugArr = null ) {
+	private static function printDebug( $debugText, array $debugArr = null ) {
 		if ( isset( $debugArr ) ) {
 			$text = $debugText . " " . implode( "::", $debugArr );
 			wfDebugLog( 'dynamic-sidebar', $text, false );
