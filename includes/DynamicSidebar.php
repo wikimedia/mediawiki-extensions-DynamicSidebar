@@ -7,7 +7,6 @@ class DynamicSidebar {
 	 *
 	 * @param Skin $skin
 	 * @param array &$sidebar
-	 * @return bool
 	 */
 	public static function modifySidebar( Skin $skin, array &$sidebar ) {
 		global $wgDynamicSidebarUseGroups,
@@ -62,7 +61,6 @@ class DynamicSidebar {
 		}
 
 		$sidebar = $sidebar_copy;
-		return true;
 	}
 
 	/**
