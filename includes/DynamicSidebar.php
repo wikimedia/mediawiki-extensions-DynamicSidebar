@@ -176,7 +176,7 @@ class DynamicSidebar {
 	 * will expand into arrItem::arrItem2::arrItem3::... and is appended to $debugText
 	 *
 	 * @param string $debugText
-	 * @param array $debugArr
+	 * @param array|null $debugArr
 	 */
 	private static function printDebug( $debugText, array $debugArr = null ) {
 		if ( isset( $debugArr ) ) {
