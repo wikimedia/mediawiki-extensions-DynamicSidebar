@@ -13,9 +13,7 @@
 		"DynamicSidebarUseUserpages": true
 	},
 	"Hooks": {
-		"SidebarBeforeOutput": [
-			"DynamicSidebar::modifySidebar"
-		]
+		"SidebarBeforeOutput": "DynamicSidebar::modifySidebar"
 	},
 	"MessagesDirs": {
 		"DynamicSidebar": [
