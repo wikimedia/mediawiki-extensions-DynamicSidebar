@@ -1,6 +1,34 @@
 <?php
 
-class DynamicSidebar {
+namespace MediaWiki\Extension\DynamicSidebar;
+
+use Article;
+use ContentHandler;
+use MediaWiki\Hook\SidebarBeforeOutputHook;
+use MediaWiki\HookContainer\HookContainer;
+use MediaWiki\User\UserGroupManager;
+use Skin;
+use Title;
+use User;
+
+class DynamicSidebarHooks implements SidebarBeforeOutputHook {
+	/** @var HookContainer */
+	private $hookContainer;
+	/** @var UserGroupManager */
+	private $userGroupManager;
+
+	/**
+	 * @param HookContainer $hookContainer
+	 * @param UserGroupManager $userGroupManager
+	 */
+	public function __construct(
+		HookContainer $hookContainer,
+		UserGroupManager $userGroupManager
+	) {
+		$this->hookContainer = $hookContainer;
+		$this->userGroupManager = $userGroupManager;
+	}
+
 	/**
 	 * Called from SidebarBeforeOutput hook. Modifies the sidebar
 	 * via callbacks.
@@ -8,30 +36,35 @@ class DynamicSidebar {
 	 * @param Skin $skin
 	 * @param array &$sidebar
 	 */
-	public static function modifySidebar( Skin $skin, array &$sidebar ) {
-		global $wgDynamicSidebarUseGroups,
-			$wgDynamicSidebarUseUserpages,
-			$wgDynamicSidebarUseCategories,
-			$wgDynamicSidebarUsePageCategories;
+	public function onSidebarBeforeOutput( $skin, &$sidebar ) : void {
+		$config = $skin->getConfig();
 
-		self::printDebug( "Entering modifySidebar" );
+		$dynamicSidebarUseGroups = $config->get( 'DynamicSidebarUseGroups' );
+		$dynamicSidebarUseUserpages = $config->get( 'DynamicSidebarUseUserpages' );
+		$dynamicSidebarUseCategories = $config->get( 'DynamicSidebarUseCategories' );
+		$dynamicSidebarUsePageCategories = $config->get( 'DynamicSidebarUsePageCategories' );
+
+		self::printDebug( "Entering onSidebarBeforeOutput" );
 		$groupSB = [];
 		$userSB = [];
 		$catSB = [];
 		$user = $skin->getUser();
-		if ( $wgDynamicSidebarUseGroups && isset( $sidebar['GROUP-SIDEBAR'] ) ) {
+		if ( $dynamicSidebarUseGroups && isset( $sidebar['GROUP-SIDEBAR'] ) ) {
 			self::printDebug( "Using group sidebar" );
-			$skin->addToSidebarPlain( $groupSB, self::doGroupSidebar( $user ) );
+			$skin->addToSidebarPlain(
+				$groupSB,
+				self::doGroupSidebar( $user, $this->userGroupManager, $this->hookContainer )
+			);
 		}
-		if ( $wgDynamicSidebarUseUserpages && isset( $sidebar['USER-SIDEBAR'] ) ) {
+		if ( $dynamicSidebarUseUserpages && isset( $sidebar['USER-SIDEBAR'] ) ) {
 			self::printDebug( "Using user sidebar" );
 			$skin->addToSidebarPlain( $userSB, self::doUserSidebar( $user ) );
 		}
-		if ( $wgDynamicSidebarUseCategories && isset( $sidebar['CATEGORY-SIDEBAR'] ) ) {
+		if ( $dynamicSidebarUseCategories && isset( $sidebar['CATEGORY-SIDEBAR'] ) ) {
 			self::printDebug( "Using category sidebar" );
 			$skin->addToSidebarPlain( $catSB, self::doCategorySidebar( $user ) );
 		}
-		if ( $wgDynamicSidebarUsePageCategories && isset( $sidebar['CATEGORY-SIDEBAR'] ) ) {
+		if ( $dynamicSidebarUsePageCategories && isset( $sidebar['CATEGORY-SIDEBAR'] ) ) {
 			self::printDebug( "Using category sidebar" );
 			$skin->addToSidebarPlain( $catSB, self::doPageCategorySidebar( $user, $skin->getTitle() ) );
 		}
@@ -89,12 +122,18 @@ class DynamicSidebar {
 	 * Grabs the sidebar for the current user's groups
 	 *
 	 * @param User $user
+	 * @param UserGroupManager $userGroupManager
+	 * @param HookContainer $hookContainer
 	 * @return string
 	 */
-	private static function doGroupSidebar( User $user ) {
+	private static function doGroupSidebar(
+		User $user,
+		UserGroupManager $userGroupManager,
+		HookContainer $hookContainer
+	) {
 		// Get group membership array.
-		$groups = $user->getEffectiveGroups();
-		Hooks::run( 'DynamicSidebarGetGroups', [ &$groups ] );
+		$groups = $userGroupManager->getUserEffectiveGroups( $user );
+		$hookContainer->run( 'DynamicSidebarGetGroups', [ &$groups ] );
 		// Did we find any groups?
 		if ( count( $groups ) == 0 ) {
 			// Remove this sidebar if not
