@@ -3,11 +3,11 @@
 namespace MediaWiki\Extension\DynamicSidebar;
 
 use Article;
-use ContentHandler;
 use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\User\UserGroupManager;
 use Skin;
+use TextContent;
 use Title;
 use User;
 
@@ -101,7 +101,7 @@ class DynamicSidebarHooks implements SidebarBeforeOutputHook {
 	 * User:<username>/Sidebar
 	 *
 	 * @param User $user
-	 * @return string
+	 * @return string|null
 	 */
 	private static function doUserSidebar( User $user ) {
 		$username = $user->getName();
@@ -115,7 +115,9 @@ class DynamicSidebarHooks implements SidebarBeforeOutputHook {
 
 		$revid = $title->getLatestRevID();
 		$a = new Article( $title, $revid );
-		return ContentHandler::getContentText( $a->getPage()->getContent() );
+
+		$content = $a->getPage()->getContent();
+		return ( $content instanceof TextContent ) ? $content->getText() : null;
 	}
 
 	/**
@@ -150,7 +152,9 @@ class DynamicSidebarHooks implements SidebarBeforeOutputHook {
 			}
 			$revid = $title->getLatestRevID();
 			$a = new Article( $title, $revid );
-			$text .= ContentHandler::getContentText( $a->getPage()->getContent() ) . "\n";
+
+			$content = $a->getPage()->getContent();
+			$text .= ( $content instanceof TextContent ) ? $content->getText() : "" . "\n";
 
 		}
 		return $text;
@@ -204,7 +208,8 @@ class DynamicSidebarHooks implements SidebarBeforeOutputHook {
 			}
 			$revid = $title->getLatestRevID();
 			$a = new Article( $title, $revid );
-			$text .= ContentHandler::getContentText( $a->getPage()->getContent() ) . "\n";
+			$content = $a->getPage()->getContent();
+			$text .= ( $content instanceof TextContent ) ? $content->getText() : "" . "\n";
 			self::printDebug( "$category text output is: $text" );
 		}
 		return $text;
