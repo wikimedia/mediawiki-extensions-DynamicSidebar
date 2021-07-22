@@ -36,7 +36,7 @@ class DynamicSidebarHooks implements SidebarBeforeOutputHook {
 	 * @param Skin $skin
 	 * @param array &$sidebar
 	 */
-	public function onSidebarBeforeOutput( $skin, &$sidebar ) : void {
+	public function onSidebarBeforeOutput( $skin, &$sidebar ): void {
 		$config = $skin->getConfig();
 
 		$dynamicSidebarUseGroups = $config->get( 'DynamicSidebarUseGroups' );
