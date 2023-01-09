@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
-	"dynamicsidebar-desc": "Omogoča dinamično stransko vrstico glede na uporabniške strani, skupine in kategorije"
+	"dynamicsidebar-desc": "Omogoča dinamično stransko letvico glede na uporabniške strani, skupine in kategorije"
 }
