@@ -223,7 +223,7 @@ class DynamicSidebarHooks implements SidebarBeforeOutputHook {
 	 * @param array|null $debugArr
 	 */
 	private static function printDebug( $debugText, array $debugArr = null ) {
-		if ( isset( $debugArr ) ) {
+		if ( $debugArr !== null ) {
 			$text = $debugText . " " . implode( "::", $debugArr );
 			wfDebugLog( 'dynamic-sidebar', $text, false );
 		} else {
