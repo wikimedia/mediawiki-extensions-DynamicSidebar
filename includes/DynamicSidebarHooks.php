@@ -176,7 +176,7 @@ class DynamicSidebarHooks implements SidebarBeforeOutputHook {
 	 * @param array|null $categories
 	 * @return string
 	 */
-	private static function doCategorySidebar( User $user, array $categories = null ) {
+	private static function doCategorySidebar( User $user, ?array $categories = null ) {
 		self::printDebug( "User name: {$user->getName()}" );
 		if ( $categories === null ) {
 			$categories = $user->getUserPage()->getParentCategories();
@@ -222,7 +222,7 @@ class DynamicSidebarHooks implements SidebarBeforeOutputHook {
 	 * @param string $debugText
 	 * @param array|null $debugArr
 	 */
-	private static function printDebug( $debugText, array $debugArr = null ) {
+	private static function printDebug( $debugText, ?array $debugArr = null ) {
 		if ( $debugArr !== null ) {
 			$text = $debugText . " " . implode( "::", $debugArr );
 			wfDebugLog( 'dynamic-sidebar', $text, false );
