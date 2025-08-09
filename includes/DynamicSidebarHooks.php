@@ -5,10 +5,10 @@ namespace MediaWiki\Extension\DynamicSidebar;
 use Article;
 use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\HookContainer\HookContainer;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserGroupManager;
 use Skin;
 use TextContent;
-use Title;
 use User;
 
 class DynamicSidebarHooks implements SidebarBeforeOutputHook {
